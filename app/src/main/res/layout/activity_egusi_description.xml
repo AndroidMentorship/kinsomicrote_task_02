@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.kingsley.android.kupsfood.EgusiDescriptionActivity">
 
     <TextView
         android:id="@+id/egusi_text_desc_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:textAlignment="center"
         android:background="@color/primary"
         android:text="@string/egusi_text"/>
@@ -20,40 +20,62 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
-        android:layout_below="@id/egusi_text_desc_view"
         android:src="@drawable/egusi_soup"/>
 
     <TextView
         android:id="@+id/egusi_amount_desc_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/egusi_image_desc_view"
         android:text="@string/egusi_amount"
         android:textAlignment="center"
         android:layout_marginTop="16dp"/>
 
-    <TextView
-        android:id="@+id/category_desc_text_view"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/egusi_amount_desc_view"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="10dp"
-        android:text="Categories:"/>
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/category_type_desc_text_view"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/category_desc_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/egusi_amount_desc_view"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="Categories:"/>
+
+        <TextView
+            android:id="@+id/category_type_desc_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/secondary_text"
+            android:text="Nigeria Dishes"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/category_desc_text_view"
-        android:layout_below="@id/egusi_amount_desc_view"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/secondary_text"
-        android:text="Nigeria Dishes"/>
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/quantity_desc_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="Quantity:"/>
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/quantity_digit_desc_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/secondary_text"
+            android:text="Nigeria Dishes"/>
+    </LinearLayout>
+
+</LinearLayout>
