@@ -75,16 +75,17 @@
             android:layout_height="40dp"
             android:text="-"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"/>
+            android:layout_marginLeft="8dp"
+            android:onClick="decreaseFoodQuantity"/>
 
         <TextView
-            android:id="@+id/food_quantity"
+            android:id="@+id/food_quantity_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="8dp"
             android:textColor="@color/secondary_text"
-            android:text="0"/>
+            android:text="@string/initial_quantity_value"/>
 
         <Button
             android:id="@+id/increase_food_quantity"
@@ -92,7 +93,8 @@
             android:layout_height="40dp"
             android:text="+"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"/>
+            android:layout_marginLeft="8dp"
+            android:onClick="increaseFoodQuantity"/>
 
     </LinearLayout>
 
