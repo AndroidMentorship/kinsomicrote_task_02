@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KupsFood</string>
+    <string name="home">Home</string>
+    <string name="menu">Menu</string>
+    <string name="category">Category</string>
+    <string name="egusi_text">Egusi Soup</string>
+    <string name="yam_text">Yam Pottage</string>
+    <string name="egusi_amount">#1,450</string>
+    <string name="yam_amount">#1,200</string>
+</resources>
