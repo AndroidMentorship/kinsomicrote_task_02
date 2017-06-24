@@ -1,4 +1,4 @@
-package com.kingsley.android.kupsfood;
+package com.kingsley.android.kupsfood.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+
+import com.kingsley.android.kupsfood.R;
 
 public class EgusiDescriptionActivity extends Activity {
 

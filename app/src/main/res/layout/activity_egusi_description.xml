@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.kingsley.android.kupsfood.EgusiDescriptionActivity">
+    tools:context="com.kingsley.android.kupsfood.activities.EgusiDescriptionActivity">
 
     <TextView
         android:id="@+id/egusi_text_desc_view"

@@ -1,10 +1,13 @@
-package com.kingsley.android.kupsfood;
+package com.kingsley.android.kupsfood.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.kingsley.android.kupsfood.Food;
+import com.kingsley.android.kupsfood.R;
 
 /**
  * Created by jioke on 6/23/17.

@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FoodDescriptionActivity" />
-        <activity android:name=".EgusiDescriptionActivity" />
-        <activity android:name=".ShippingConfirmationActivity"></activity>
+        <activity android:name=".activities.EgusiDescriptionActivity" />
+        <activity android:name=".activities.ShippingConfirmationActivity"></activity>
     </application>
 
 </manifest>
