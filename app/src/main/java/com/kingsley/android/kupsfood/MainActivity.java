@@ -31,16 +31,7 @@ public class MainActivity extends Activity {
 
       listView.setAdapter(foodAdapter);
 
-        TextView egusi = (TextView) findViewById(R.id.egusi_text_view);
 
-        egusi.setOnClickListener(new OnClickListener() {
-
-          @Override
-          public void onClick(View view) {
-            Intent egusiIntent = new Intent(MainActivity.this, EgusiDescriptionActivity.class);
-            startActivity(egusiIntent);
-          }
-        });
     }
 
 }
