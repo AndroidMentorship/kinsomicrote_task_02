@@ -1,14 +1,9 @@
 package com.kingsley.android.kupsfood;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.kingsley.android.kupsfood.activities.EgusiDescriptionActivity;
 import com.kingsley.android.kupsfood.adapters.FoodAdapter;
 
 import java.util.ArrayList;
