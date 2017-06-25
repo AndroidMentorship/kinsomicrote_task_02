@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.kingsley.android.kupsfood.activities.FoodDescription;
 import com.kingsley.android.kupsfood.activities.FoodDescriptionActivity;
 import com.kingsley.android.kupsfood.adapters.FoodAdapter;
 
@@ -34,7 +33,6 @@ public class MainActivity extends Activity {
       listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
         @Override
         public void onItemClick(AdapterView<?>adapter, View v,int position) {
-          ItemClicked item = adapter.getItemAtPosition(position);
 
           Intent intent = new Intent(MainActivity.this, FoodDescriptionActivity.class);
           startActivity(intent);
