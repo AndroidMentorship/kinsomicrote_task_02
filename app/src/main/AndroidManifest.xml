@@ -19,7 +19,8 @@
         <activity android:name=".FoodDescriptionActivity" />
         <activity android:name=".activities.EgusiDescriptionActivity" />
         <activity android:name=".activities.ShippingConfirmationActivity" />
-        <activity android:name=".activities.FoodDescription"></activity>
+        <activity android:name=".activities.FoodDescription" />
+        <activity android:name=".activities.FoodDescriptionActivity"></activity>
     </application>
 
 </manifest>
