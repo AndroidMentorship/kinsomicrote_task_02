@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
       // Create a list of food.
-      ArrayList<Food> foods = new ArrayList<Food>();
+      final ArrayList<Food> foods = new ArrayList<Food>();
       foods.add(new Food("Yam Pottage", "#1,200", R.drawable.yam_pottage));
       foods.add(new Food("Egusi Soup", "#1,200", R.drawable.egusi_soup));
 
@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
         public void onItemClick(AdapterView<?>adapter, View v,int position, long id) {
 
           Intent intent = new Intent(MainActivity.this, FoodDescriptionActivity.class);
+          intent.putExtra("Food", food);
           startActivity(intent);
         }
       });
