@@ -35,7 +35,12 @@ public class MainActivity extends Activity {
         public void onItemClick(AdapterView<?>adapter, View v,int position, long id) {
 
           Intent intent = new Intent(MainActivity.this, FoodDescriptionActivity.class);
-          intent.putExtra("Food", food);
+          Food currentItem = (Food) adapter.getItemAtPosition(position);
+
+          intent.putExtra("name", currentItem.getFoodName());
+          intent.putExtra("image", currentItem.getImageResourceId());
+          intent.putExtra("price", currentItem.getFoodAmount());
+
           startActivity(intent);
         }
       });

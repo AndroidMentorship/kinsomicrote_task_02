@@ -8,7 +8,7 @@
     tools:context="com.kingsley.android.kupsfood.activities.FoodDescriptionActivity">
 
     <TextView
-        android:id="@+id/food_name_desc_header"
+        android:id="@+id/food_name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
