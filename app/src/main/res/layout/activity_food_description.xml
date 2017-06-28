@@ -7,25 +7,57 @@
     android:orientation="vertical"
     tools:context="com.kingsley.android.kupsfood.activities.FoodDescriptionActivity">
 
-    <TextView
-        android:id="@+id/food_name_text_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary"
+        android:layout_marginBottom="8dp">
 
-    <ImageView
-        android:id="@+id/food_image_desc"
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/food_name_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            tools:text="Yam Pottage"/>
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/food_image_desc"
+        android:layout_margin="8dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/accent"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
 
         <TextView
             android:id="@+id/food_quantity_desc"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
 
         <Button
             android:id="@+id/decrease_food_quantity"
@@ -37,6 +69,7 @@
             android:id="@+id/food_quantity_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:text="2"/>
 
         <Button
@@ -56,15 +89,29 @@
             android:id="@+id/food_price_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Price:"/>
+            android:text="Price:"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
 
 
         <TextView
             android:id="@+id/food_price_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2"/>
+            tools:text="#1,200"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buy_button_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="BUY"
+        android:textAllCaps="true"
+        android:background="@color/primary_light"/>
+
 
 </LinearLayout>
